@@ -35,6 +35,12 @@ ul.list {
 ul.list li {
     display: block;
 }
+ul.list.border li{
+    border-bottom: 1px solid #eee;
+}
+ul.list.border li:last-child{
+    border-bottom: none;
+}
 
 .list-item {
     display: block;
@@ -69,6 +75,33 @@ ul.list li {
 .list-item p {
     line-height: 1.385em;
 }
+.list-item a.btn-left{
+    float: left;
+}
+.list-item a.btn-left i{
+    position: relative;
+    top: -1px;
+}
+
+.user-item{
+    display: block;
+    line-height: 36px;
+    padding: 8px 4px;
+    border-bottom: 1px solid #eee;
+}
+.user-item .user-photo{
+    display: inline-block;
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    background-color: #EE6723;
+    color: #fff;
+    text-align: center;
+    border-radius: 100%;
+    vertical-align: middle;
+    margin-right: 8px;
+}
 
 
 /*  */
@@ -87,8 +120,8 @@ ul.list-img li {
 }
 
 .img-item img {
-    width: 47.5%;
-    margin-bottom: -5px;
+    width: 43.5%;
+    margin-bottom: 0px;
 }
 
 .img-item p {

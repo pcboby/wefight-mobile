@@ -37,6 +37,10 @@ body.on-fix-header.on-fix-wraper .wraper{
 	margin-top: 20px;
 }
 /*  */
+h1,h2,h3,h4,h5,h6,label{
+	font-weight: normal;
+}
+/*  */
 .header{
 	display: flex;
 	height: 44px;
@@ -91,6 +95,28 @@ body.on-fix-header.on-fix-wraper .wraper{
     padding: 0 .875em;
     border-radius: 1em 1em;
     font-style: italic;
+}
+.line-bottom-dot::after{
+	content: '';
+	display: block;
+	border-bottom: 1px dashed #ddd;
+	margin: 0 -10px;
+}
+.line-bottom::after{
+	content: '';
+	display: block;
+	border-bottom: 1px solid #ddd;
+	margin: 0 -10px;
+}
+/*  */
+.tl{
+	text-align: left;
+}
+.tc{
+	text-align: center;
+}
+.tr{
+	text-align: right;
 }
 /*  */
 /* .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
@@ -250,6 +276,9 @@ body.on-fix-header.on-fix-wraper .wraper{
   margin-left: 0;
 } */
 /*  */
+.mg-0{
+	margin: 0px !important;
+}
 .mg-5{
 	margin: 5px !important;
 }
@@ -326,6 +355,9 @@ body.on-fix-header.on-fix-wraper .wraper{
 	margin-left: 30px !important;
 }
 /*  */
+.pd-0{
+	padding: 0px !important;
+}
 .pd-5{
 	padding: 5px !important;
 }
