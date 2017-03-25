@@ -27,12 +27,16 @@
         </div>
         <div class="title">首页</div>
         <div class="btn-right">
+            <a class="pull-right">
+                <i class="user-photo" style="background-image: url(../update/11111.jpg);"></i>
+                <!-- <i class="glyphicon glyphicon-user user-photo"></i> -->
+            </a>
         </div>
     </div>
     <div class="wraper">
         <!--  -->
         <div class="potal">
-            <div class="potal-body">
+            <div class="potal-body pd-0">
                 <!--  -->
                 <ul class="list-step small">
                     <li class="active">
@@ -62,38 +66,26 @@
                         </div>
                     </li>
                 </ul>
-                <div class="space-line mg-t-10"></div>
-                <div class="swiper-container swiper-no-swiping swiper-container-note" style="height: 40px;">
+                <div class="space-line mg-0 mg-t-10"></div>
+                <div class="swiper-container swiper-no-swiping swiper-container-note pd-l-5 pd-r-5" style="height: 40px;">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <ul class="list">
-                                <li>
-                                    <a class="list-item fa fa-chevron-right">
-                                        <i class="icon icon-speech c-02" tips="1"></i>
-                                        <span>抵达一线后请及时报到1111</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <a class="list-item fa fa-chevron-right">
+                                <i class="icon icon-speech c-02" tips="1"></i>
+                                <span>抵达一线后请及时报到1111</span>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <ul class="list">
-                                <li>
-                                    <a class="list-item fa fa-chevron-right">
-                                        <i class="icon icon-speech c-02"></i>
-                                        <span>抵达一线后请及时报到2222</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <a class="list-item fa fa-chevron-right">
+                                <i class="icon icon-speech c-02"></i>
+                                <span>抵达一线后请及时报到2222</span>
+                            </a>
                         </div>
                         <div class="swiper-slide">
-                            <ul class="list">
-                                <li>
-                                    <a class="list-item fa fa-chevron-right">
-                                        <i class="icon icon-speech c-02" tips="3"></i>
-                                        <span>抵达一线后请及时报到3333</span>
-                                    </a>
-                                </li>
-                            </ul>
+                            <a class="list-item fa fa-chevron-right">
+                                <i class="icon icon-speech c-02" tips="3"></i>
+                                <span>抵达一线后请及时报到3333</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -474,7 +466,7 @@
             autoplay: 1500,
             autoplayDisableOnInteraction: false,
             loop: true,
-            noSwiping : true
+            noSwiping: true
         });
         var swiper0 = new Swiper('.swiper-container-0', {
             scrollbarHide: true,

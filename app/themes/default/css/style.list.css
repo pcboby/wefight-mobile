@@ -61,6 +61,10 @@ ul.list.border li:last-child {
     line-height: 22px;
     vertical-align: middle;
 }
+.list-item i[tips]::after{
+    top: -7px;
+    right: -10px;
+}
 
 .list-item i.pull-right {
     margin-right: 0px;
@@ -96,7 +100,7 @@ ul.list.border li:last-child {
     border-bottom: 1px solid #eee;
 }
 
-.user-item .user-photo {
+.user-photo {
     display: inline-block;
     background-size: cover;
     width: 36px;
@@ -421,6 +425,7 @@ ul.list-step li.active .step-item::before {
 ul.list-step.small li.active .step-item::before {
     margin-top: 12px;
     margin-bottom: -24px;
+    background-color: #2ab9fd;
 }
 
 ul.list-step li:last-child .step-item::before {
