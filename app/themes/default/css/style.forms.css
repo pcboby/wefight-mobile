@@ -73,6 +73,14 @@
     background-image: -webkit-linear-gradient(to right, #f84221, #fd8024);
     background-image: linear-gradient(to right, #f84221, #fd8024);
 }
+.btn-block-o-sm{
+    color: #fff;
+    height: 16px;
+    padding: 3px .635em;
+    border-radius: 20px;
+    background-image: -webkit-linear-gradient(to right, #f84221, #fd8024);
+    background-image: linear-gradient(to right, #f84221, #fd8024);
+}
 .btn-block-d:disabled,.btn-block-o:disabled{
     opacity: .5;
 }
