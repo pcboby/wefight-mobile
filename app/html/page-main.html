@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="../../bower_components/simple-line-icons/css/simple-line-icons.css">
     <link rel="stylesheet" href="../../bower_components/magic-check/css/magic-check.css">
     <script src="../../bower_components/jquery/dist/jquery.js"></script>
+    <link rel="stylesheet" href="../../bower_components/swiper/dist/css/swiper.css">
+    <script src="../../bower_components/swiper/dist/js/swiper.js"></script>
     <!-- App css -->
     <link rel="stylesheet" href="../themes/default/css/style.css">
 </head>
@@ -44,6 +46,14 @@
                             <div class="step-item-content">
                                 <p class="c-02">离出队大概还有6个月</p>
                             </div>
+                            <div class="step-item-btns">
+                                <a class="step-view-more">
+                                    <span>详情内容</span>
+                                    <i class="fa fa-angle-right"></i>
+                                    <i class="fa fa-angle-right"></i>
+                                    <i class="fa fa-angle-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </li>
                     <li>
@@ -53,14 +63,40 @@
                     </li>
                 </ul>
                 <div class="space-line mg-t-10"></div>
-                <ul class="list">
-                    <li>
-                        <a class="list-item fa fa-chevron-right">
-                            <i class="icon icon-speech c-02" tips="3"></i>
-                            <span>抵达一线后请及时报到</span>
-                        </a>
-                    </li>
-                </ul>
+                <div class="swiper-container swiper-no-swiping swiper-container-note" style="height: 40px;">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <ul class="list">
+                                <li>
+                                    <a class="list-item fa fa-chevron-right">
+                                        <i class="icon icon-speech c-02" tips="3"></i>
+                                        <span>抵达一线后请及时报到1111</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="list">
+                                <li>
+                                    <a class="list-item fa fa-chevron-right">
+                                        <i class="icon icon-speech c-02" tips="3"></i>
+                                        <span>抵达一线后请及时报到2222</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="swiper-slide">
+                            <ul class="list">
+                                <li>
+                                    <a class="list-item fa fa-chevron-right">
+                                        <i class="icon icon-speech c-02" tips="3"></i>
+                                        <span>抵达一线后请及时报到3333</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <!--  -->
             </div>
         </div>
@@ -70,32 +106,60 @@
                 任务书
             </div>
             <div class="potal-body">
-                <ul class="list-img" data-col="4">
-                    <li>
-                        <a class="img-item">
-                            <img src="../themes/default/images/img_11.png" alt="">
-                            <p><span class="checkLab">作战任务书</span></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="img-item">
-                            <img src="../themes/default/images/img_12.png" alt="">
-                            <p><span class="checkLab" tips="3">周报</span></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="img-item">
-                            <img src="../themes/default/images/img_13.png" alt="">
-                            <p><span class="checkLab">月报</span></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="img-item">
-                            <img src="../themes/default/images/img_14.png" alt="">
-                            <p><span class="checkLab">中期审视</span></p>
-                        </a>
-                    </li>
-                </ul>
+                <!--  -->
+                <div class="swiper-container swiper-container-0">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!--  -->
+                            <ul class="list-img" data-col="4">
+                                <li>
+                                    <a class="img-item">
+                                        <img src="../themes/default/images/img_11.png" alt="">
+                                        <p><span class="checkLab">作战任务书</span></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="img-item">
+                                        <img src="../themes/default/images/img_12.png" alt="">
+                                        <p><span class="checkLab" tips="3">周报</span></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="img-item">
+                                        <img src="../themes/default/images/img_13.png" alt="">
+                                        <p><span class="checkLab">月报</span></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="img-item">
+                                        <img src="../themes/default/images/img_14.png" alt="">
+                                        <p><span class="checkLab">中期审视</span></p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--  -->
+                        </div>
+                        <div class="swiper-slide">
+                            <!--  -->
+                            <ul class="list-img" data-col="4">
+                                <li>
+                                    <a class="img-item">
+                                        <img src="../themes/default/images/img_14.png" alt="">
+                                        <p><span class="checkLab">中期审视</span></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="img-item">
+                                        <img src="../themes/default/images/img_14.png" alt="">
+                                        <p><span class="checkLab">中期审视</span></p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
+                <!--  -->
             </div>
         </div>
         <!--  -->
@@ -104,26 +168,35 @@
                 德电公有云项目
             </div>
             <div class="potal-body">
-                <ul class="list-img" data-col="4">
-                    <li>
-                        <a class="img-item">
-                            <img src="../themes/default/images/img_15.png" alt="">
-                            <p><span class="checkLab">项目简介</span></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="img-item">
-                            <img src="../themes/default/images/img_16.png" alt="">
-                            <p><span class="checkLab">项目里程碑</span></p>
-                        </a>
-                    </li>
-                    <li>
-                        <a class="img-item">
-                            <img src="../themes/default/images/img_17.png" alt="">
-                            <p><span class="checkLab">项目人员</span></p>
-                        </a>
-                    </li>
-                </ul>
+                <!--  -->
+                <div class="swiper-container swiper-container-1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <!--  -->
+                            <ul class="list-img" data-col="4">
+                                <li>
+                                    <a class="img-item">
+                                        <img src="../themes/default/images/img_15.png" alt="">
+                                        <p><span class="checkLab">项目简介</span></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="img-item">
+                                        <img src="../themes/default/images/img_16.png" alt="">
+                                        <p><span class="checkLab">项目里程碑</span></p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="img-item">
+                                        <img src="../themes/default/images/img_17.png" alt="">
+                                        <p><span class="checkLab">项目人员</span></p>
+                                    </a>
+                                </li>
+                            </ul>
+                            <!--  -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!--  -->
@@ -329,7 +402,8 @@
                                     </p>
                                 </div>
                             </li>
-                        </ul><ul class="list border" style="display: none;">
+                        </ul>
+                        <ul class="list border" style="display: none;">
                             <li>
                                 <div class="news-item">
                                     <img src="../update/news.png" alt="">
@@ -381,16 +455,42 @@
         <div class="space"></div>
     </div>
     <script>
-        $(function(){
-            $('.list-tab-group').each(function(idx,el){
-                $(el).children('.list-tab-group-tabs').find('li').each(function(i,e){
-                    $(e).click(function(){
-                        $(this).addClass('active').siblings('li').removeClass('active');
-                        $($(el).children('.list-tab-group-conts').find('ul')[i]).show().siblings('ul').hide();
-                    })
+    $(function() {
+        $('.list-tab-group').each(function(idx, el) {
+            $(el).children('.list-tab-group-tabs').find('li').each(function(i, e) {
+                $(e).click(function() {
+                    $(this).addClass('active').siblings('li').removeClass('active');
+                    $($(el).children('.list-tab-group-conts').find('ul')[i]).show().siblings('ul').hide();
                 })
             })
-        })
+        });
+        var swiper0 = new Swiper('.swiper-container-note', {
+            direction: 'vertical',
+            scrollbarHide: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            grabCursor: true,
+            centeredSlides: true,
+            autoplay: 1500,
+            autoplayDisableOnInteraction: false,
+            loop: true,
+            noSwiping : true
+        });
+        var swiper0 = new Swiper('.swiper-container-0', {
+            scrollbarHide: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            grabCursor: true,
+            freeMode: true
+        });
+        var swiper1 = new Swiper('.swiper-container-1', {
+            scrollbarHide: true,
+            slidesPerView: 'auto',
+            centeredSlides: true,
+            grabCursor: true,
+            freeMode: true
+        });
+    })
     </script>
 </body>
 

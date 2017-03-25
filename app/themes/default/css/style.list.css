@@ -37,10 +37,12 @@ ul.list {
 ul.list li {
     display: block;
 }
-ul.list.border li{
+
+ul.list.border li {
     border-bottom: 1px solid #eee;
 }
-ul.list.border li:last-child{
+
+ul.list.border li:last-child {
     border-bottom: none;
 }
 
@@ -77,21 +79,24 @@ ul.list.border li:last-child{
 .list-item p {
     line-height: 1.385em;
 }
-.list-item a.btn-left{
+
+.list-item a.btn-left {
     float: left;
 }
-.list-item a.btn-left i{
+
+.list-item a.btn-left i {
     position: relative;
     top: -1px;
 }
 
-.user-item{
+.user-item {
     display: block;
     line-height: 36px;
     padding: 8px 4px;
     border-bottom: 1px solid #eee;
 }
-.user-item .user-photo{
+
+.user-item .user-photo {
     display: inline-block;
     background-size: cover;
     width: 36px;
@@ -105,41 +110,48 @@ ul.list.border li:last-child{
     margin-right: 8px;
 }
 
-.news-item{
+.news-item {
     margin: 10px 0;
     position: relative;
 }
-.news-item img{
+
+.news-item img {
     float: left;
     width: 100px;
     height: 56px;
     margin-right: 5px;
 }
-.news-item p{
+
+.news-item p {
     font-size: 12px;
-    margin:0;
+    margin: 0;
     line-height: 16px;
     color: #333;
 }
-.news-item p.title{
+
+.news-item p.title {
     padding: 2px 0;
     height: 40px;
 }
-.news-item p.other{
+
+.news-item p.other {
     color: #999;
     font-size: 11px;
     font-style: italic;
 }
-.news-item .btns{
+
+.news-item .btns {
     position: absolute;
     right: 0;
     bottom: 0;
 }
-.news-item[data-view=right] img{
+
+.news-item[data-view=right] img {
     float: right;
     margin-left: 5px;
     margin-right: 0;
 }
+
 
 /*  */
 
@@ -183,23 +195,27 @@ ul.list-img li {
     color: #ff7138;
 }
 
-ul.list-img[data-col="4"]{
+ul.list-img[data-col="4"] {
     padding: 0;
 }
-ul.list-img[data-col="4"] li{
+
+ul.list-img[data-col="4"] li {
     width: 25%;
 }
-ul.list-img[data-col="4"] li a{
+
+ul.list-img[data-col="4"] li a {
     padding: 2px;
 }
-ul.list-img[data-col="4"] img{
+
+ul.list-img[data-col="4"] img {
     width: 65%;
     margin: 5px;
 }
 
-ul.list-img[data-col="4"] li .img-item{
+ul.list-img[data-col="4"] li .img-item {
     font-size: 12px;
 }
+
 
 /*  */
 
@@ -219,16 +235,16 @@ ul.list-step::before {
     z-index: 1;
     bottom: 36px;
 }
-ul.list-step.small::before{
+
+ul.list-step.small::before {
     background-color: #eee;
     top: 16px;
     bottom: 16px;
 }
 
 
-
 /* ul.list-step::after{
-	height: 200px;
+    height: 200px;
     background-image: -webkit-linear-gradient(to bottom, #00acff, #5c5c5c);
     background-image: linear-gradient(to bottom, #00acff, #5c5c5c);
 } */
@@ -239,6 +255,7 @@ ul.list-step li {
     margin-bottom: 20px;
     color: #b6b7bc;
 }
+
 ul.list-step.small li {
     margin-bottom: 0px;
 }
@@ -257,12 +274,14 @@ ul.list-step li::before {
     z-index: 2;
     box-shadow: 0 0 5px rgba(0, 0, 0, .3);
 }
-ul.list-step.small li::before{
+
+ul.list-step.small li::before {
     box-shadow: none;
     top: 16px;
     background-color: #b5b5b5;
 }
-ul.list-step.small li::before{
+
+ul.list-step.small li::before {
     width: 12px;
     height: 12px;
     margin-left: -4px;
@@ -283,7 +302,8 @@ ul.list-step li::after {
     margin-top: -16px;
     z-index: 2;
 }
-ul.list-step.small li::after{
+
+ul.list-step.small li::after {
     background-color: #b5b5b5;
     top: 16px;
     width: 24px;
@@ -305,7 +325,8 @@ ul.list-step li.active .step-item-title::after {
     display: inline-block;
     color: #28b1f3;
 }
-ul.list-step.small li.active .step-item-title::after{
+
+ul.list-step.small li.active .step-item-title::after {
     content: none;
 }
 
@@ -320,7 +341,8 @@ ul.list-step li.selected::before {
     top: 23px;
     left: -37px;
 }
-ul.list-step.small li.selected::before{
+
+ul.list-step.small li.selected::before {
     width: 24px;
     height: 24px;
     top: 20px;
@@ -337,28 +359,34 @@ ul.list-step li.selected::after {
     -webkit-animation: scaleout 1.3s infinite ease-in-out;
     animation: scaleout 1.3s infinite ease-in-out;
 }
-ul.list-step.small li.selected::after{
+
+ul.list-step.small li.selected::after {
     width: 36px;
     height: 36px;
     top: 20px;
     left: -38px;
 }
+
 @-webkit-keyframes scaleout {
-    0% { -webkit-transform: scale(.5) }
+    0% {
+        -webkit-transform: scale(.5)
+    }
     100% {
         -webkit-transform: scale(1.5);
         opacity: 0;
     }
 }
+
 @keyframes scaleout {
     0% {
         transform: scale(.5);
         -webkit-transform: scale(.5);
-    } 100% {
-          transform: scale(1.5);
-          -webkit-transform: scale(1.5);
-          opacity: 0;
-      }
+    }
+    100% {
+        transform: scale(1.5);
+        -webkit-transform: scale(1.5);
+        opacity: 0;
+    }
 }
 
 ul.list-step li.selected .step-item-title::after {
@@ -368,11 +396,12 @@ ul.list-step li.selected .step-item-title::after {
 
 ul.list-step li.selected .step-item-content::after {
     display: block;
-    content: '您所处的步骤';
+    content: attr(data-content);
     color: #fb6322;
     margin-top: -.875em;
 }
-ul.list-step.small li.selected .step-item-content::after{
+
+ul.list-step.small li.selected .step-item-content::after {
     content: none;
 }
 
@@ -388,6 +417,7 @@ ul.list-step li.active .step-item::before {
     width: 4px;
     background-color: #2e85b3;
 }
+
 ul.list-step.small li.active .step-item::before {
     margin-top: 12px;
     margin-bottom: -24px;
@@ -398,13 +428,15 @@ ul.list-step li:last-child .step-item::before {
 }
 
 .step-item {
-    padding: 0 20px;
+    padding-left: 10px;
     position: relative;
 }
-ul.list-step.small .step-item{
+
+ul.list-step.small .step-item {
     padding: 0;
 }
-ul.list-step.small .step-item p{
+
+ul.list-step.small .step-item p {
     margin: 0;
 }
 
@@ -412,7 +444,8 @@ ul.list-step.small .step-item p{
     line-height: 56px;
     font-size: 17px;
 }
-ul.list-step.small .step-item-title{
+
+ul.list-step.small .step-item-title {
     line-height: 32px;
 }
 
@@ -427,44 +460,108 @@ ul.list-step.small .step-item-title{
 
 .step-item-content {}
 
-/*  */
-ul.list-note{}
-ul.list-note li{
-	display: block;
-	position: relative;
-	padding-left: 2em;
-	color: #a4a5ab;
+.step-item-btns {
+    position: absolute;
+    font-size: 12px;
+    right: 0;
+    top: 18px;
 }
-ul.list-note li::before{
-	content: '';
-	position: absolute;
-	top: .5em;
-	left: 1em;
-	width: 8px;
-	height: 8px;
-	border-radius: 2px;
-	background-color: #eb4e00;
-	margin-top: 0px;
-	margin-left: -4px;
+
+a.step-view-more {
+    color: #f90;
+    display: inline-block;
+    line-height: 24px;
 }
+
+a.step-view-more i.fa-angle-right {
+    -webkit-animation: bounceDelay 1.4s infinite ease-in-out;
+    animation: bounceDelay 1.4s infinite ease-in-out;
+    /* Prevent first frame from flickering when animation starts */
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+a.step-view-more i.fa-angle-right:nth-child(2) {
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+a.step-view-more i.fa-angle-right:nth-child(3) {
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+@-webkit-keyframes bounceDelay {
+    0%,
+    80%,
+    100% {
+        -webkit-transform: scale(0);
+    }
+    40% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes bounceDelay {
+    0%,
+    80%,
+    100% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    40% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+
 /*  */
-ul.list-tabs{
+
+ul.list-note {}
+
+ul.list-note li {
+    display: block;
+    position: relative;
+    padding-left: 2em;
+    color: #a4a5ab;
+}
+
+ul.list-note li::before {
+    content: '';
+    position: absolute;
+    top: .5em;
+    left: 1em;
+    width: 8px;
+    height: 8px;
+    border-radius: 2px;
+    background-color: #eb4e00;
+    margin-top: 0px;
+    margin-left: -4px;
+}
+
+
+/*  */
+
+ul.list-tabs {
     border-bottom: 2px solid #eee;
 }
-ul.list-tabs li{
+
+ul.list-tabs li {
     display: inline-block;
     line-height: 34px;
     font-size: 13px;
 }
-ul.list-tabs li a{
+
+ul.list-tabs li a {
     display: block;
     padding: 0 .875em;
 }
-ul.list-tabs li.active{
+
+ul.list-tabs li.active {
     color: #f90;
     position: relative;
 }
-ul.list-tabs li.active::after{
+
+ul.list-tabs li.active::after {
     content: '';
     position: absolute;
     bottom: -2px;
@@ -473,11 +570,16 @@ ul.list-tabs li.active::after{
     right: 0;
     background-color: #f90;
 }
-ul.list-tabs[data-view=right]{
+
+ul.list-tabs[data-view=right] {
     text-align: right;
 }
+
+
 /*  */
 
-.list-tab-group{}
-.list-tab-group .list-tab-group-tabs{}
-.list-tab-group .list-tab-group-conts{}
+.list-tab-group {}
+
+.list-tab-group .list-tab-group-tabs {}
+
+.list-tab-group .list-tab-group-conts {}
