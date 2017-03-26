@@ -2,7 +2,7 @@ body.on-navbar-open{}
 .navbar{
 	position: fixed;
 	bottom: 0px;
-	right: 10%;
+	right: 60px;
 	z-index: 99;
 }
 .navbar .navbar-layout{
@@ -32,7 +32,7 @@ ul.list-nav{
 	position: relative;
 }
 ul.list-nav li{
-	margin: 0;
+	margin: 0 0 0 4px;
 	padding: 0;
 	list-style-type: none;
 	list-style: none;
@@ -63,6 +63,7 @@ body.on-navbar-open ul.list-nav li{
 ul.list-nav li:first-child{
 	opacity: 1;
 	z-index: 1;
+	margin: 0;
 }
 ul.list-nav li a{
 	display: inline-block;
@@ -73,7 +74,7 @@ ul.list-nav li a{
 	width: 40px;
 	height: 40px;
 	line-height: 40px;
-	margin-left: -20px;
+	/* margin-left: -20px; */
 	text-align: center;
 	font-size: 17px;
 	box-shadow: 0 0 5px rgba(0,0,0,.3);
@@ -105,7 +106,7 @@ ul.list-nav li:nth-child(1) a{
 	width: 48px;
 	height: 48px;
 	line-height: 48px;
-	margin-left: -24px;
+	/* margin-left: -24px; */
     background-image: -webkit-linear-gradient(to right, #f84221, #fd8024);
     background-image: linear-gradient(to right, #f84221, #fd8024);
     color: #fff;
