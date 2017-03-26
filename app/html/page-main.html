@@ -446,8 +446,45 @@
         <!--  -->
         <div class="space"></div>
     </div>
+    <div class="navbar">
+        <div class="navbar-layout"></div>
+        <ul class="list-nav">
+            <li>
+                <a></a>
+            </li>
+            <li>
+                <a>
+                    <i class="icon icon-note"></i>
+                    <span class="title">反馈</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="icon icon-question"></i>
+                    <span class="title">问答</span>
+                </a>
+            </li>
+            <li>
+                <a>
+                    <i class="icon icon-speech"></i>
+                    <span class="title">圈子</span>
+                </a>
+            </li>
+        </ul>
+    </div>
     <script>
     $(function() {
+        $('.navbar').each(function(idx,el){
+            $(el).find('li:first-child a').click(function(e){
+                // e.stopPropagation();
+                e.preventDefault();
+                $('body')[$('body').is('.on-navbar-open')?'removeClass':'addClass']('on-navbar-open');
+            })
+            $(el).find('.navbar-layout').click(function(e){
+                e.stopPropagation();
+                $('body').removeClass('on-navbar-open');
+            })
+        })
         $('.list-tab-group').each(function(idx, el) {
             $(el).children('.list-tab-group-tabs').find('li').each(function(i, e) {
                 $(e).click(function() {
