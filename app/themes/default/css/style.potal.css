@@ -1,6 +1,9 @@
 .potal{
 	margin: 0 3.875%;
 }
+.potal.shadow{
+	box-shadow: 0 0 7px rgba(0,0,0,.2);
+}
 .potal::after{
 	display: block;
 	content: '';

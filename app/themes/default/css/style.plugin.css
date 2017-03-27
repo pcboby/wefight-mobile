@@ -1,6 +1,8 @@
-html,body{
+body{
 	background-color: #343745;
 	overflow: auto;
+	width: 100%;
+	height: 100%;
 }
 /*  */
 input{
@@ -18,7 +20,12 @@ body.on-fix-header .header{
 	top: 0;
 	left: 0;
 	right: 0;
-	background-color: #343745;
+	background-color: rgba(52,55,69,.95);
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 body.on-fix-header .wraper{
 	margin-top: 44px;
@@ -30,11 +37,15 @@ body.on-fix-wraper .wraper{
 	bottom: 0;
 	left: 0;
 }
-body.on-fix-header.on-fix-wraper .header{
-	background-color: transparent;
+body.on-fix-wraper .header,body.on-trans-header .header{
+	background-color: rgba(52,55,69,0) !important;
 }
 body.on-fix-header.on-fix-wraper .wraper{
 	margin-top: 20px;
+}
+body.body-gray{
+	background-color: #f1f1f1;
+	color: #000;
 }
 /*  */
 h1,h2,h3,h4,h5,h6,label{
