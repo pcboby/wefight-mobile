@@ -52,7 +52,7 @@ ul.list-group-users[data-view='3'],ul.list-group-users[data-view='4']{
 	width: 60px;
 }
 ul.list-group-users[data-view='4'] li i,ul.list-group-users[data-view='3'] li i{
-	width: 28px;
-	height: 28px;
+	width: 28px !important;
+	height: 28px !important;
 	margin: -5px;
 }

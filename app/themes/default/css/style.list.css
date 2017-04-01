@@ -24,7 +24,9 @@ ul.list-step li,
 ul.list-note,
 ul.list-note li,
 ul.list-tabs,
-ul.list-tabs li {
+ul.list-tabs li,
+ul.list-inline,
+ul.list-inline li {
     margin: 0;
     padding: 0;
     list-style: none;
@@ -49,7 +51,22 @@ ul.list.border li {
 ul.list.border li:last-child {
     border-bottom: none;
 }
-
+/*  */
+ul.list-inline{}
+ul.list-inline li{
+    display: inline-block;
+    /* margin-right: .315em; */
+}
+/*  */
+.lib-item{
+    display: block;
+    border: 1px solid #f90;
+    border-radius: 3px;
+    padding: 0 .315em;
+    line-height: 1.635em;
+    font-size: 12px;
+}
+/*  */
 .list-item {
     display: block;
     line-height: 32px;
@@ -113,28 +130,63 @@ ul.list.border li:last-child {
 .list-item .list-item-btns + .list-item-cont{
     margin-right: 58px;
 }
-
+/*  */
 .user-item {
     display: block;
     line-height: 36px;
     padding: 8px 4px;
     border-bottom: 1px solid #eee;
 }
-
+/*  */
 .user-photo {
-    display: inline-block;
+    display: block;
+    position: relative;
     background-size: cover;
     width: 36px;
-    height: 36px;
+    height: 36px !important;
     line-height: 36px;
     background-color: #EE6723;
     color: #fff;
     text-align: center;
     border-radius: 100%;
     vertical-align: middle;
-    margin-right: 8px;
+    margin: 0 auto;
+    border: 1px solid transparent;
 }
-
+.user-photo[post]::before{
+    transform:scale(.85); 
+    content: attr(post);
+    position: absolute;
+    background-color: gray;
+    padding: 0 .475em;
+    font-size: 13px;
+    border-radius: 4px 4px;
+    line-height: 1.475em;
+    bottom: -2px;
+    left: 65%;
+}
+.user-photo[post-type="1"]{
+    border: 2px solid #EE6723;
+    box-shadow: 0px 0px 3px #fff inset;
+}
+.user-photo[post-type="1"]::before{
+    background-color: #EE6723;
+}
+.user-photo[post-type="2"]::before{
+    background-color: #2ab9fd;
+}
+.user-photo[post-type="3"]::before{
+    background-color: #bda68e;
+}
+.user-photo.user-photo-sm{
+    width: 28px !important;
+    height: 28px !important;
+}
+.user-photo.user-photo-lg{
+    width: 48px !important;
+    height: 48px !important;
+}
+/*  */
 .news-item {
     margin: 10px 0;
     position: relative;
@@ -231,7 +283,7 @@ ul.list-img li {
 
 .img-item p {
     display: block;
-    line-height: 1.385em;
+    line-height: 1.875em;
     margin: 0;
 }
 
@@ -268,7 +320,7 @@ ul.list-img[data-col="4"] img {
     margin: 5px;
 }
 
-ul.list-img[data-col="4"] li .img-item {
+ul.list-img[data-col="3"] li .img-item ,ul.list-img[data-col="4"] li .img-item {
     font-size: 12px;
 }
 
