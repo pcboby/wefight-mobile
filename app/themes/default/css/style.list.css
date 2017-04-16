@@ -268,7 +268,7 @@ ul.list-inline li{
     position: absolute;
     top: 50%;
     margin-top: -18px;
-    left: 5px;
+    left: 10px;
     border-width: 1px;
 }
 .person-item .user-post{
