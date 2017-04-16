@@ -66,6 +66,17 @@ ul.list-inline li{
     /* margin-right: .315em; */
 }
 /*  */
+.list-title{
+    line-height: 1.875em;
+    font-size: 13px;
+    padding: 2px 10px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    background-color: #F6F8FC;
+    color: #999BA4;
+    margin: 0;
+}
+/*  */
 .lib-item{
     display: block;
     border: 1px solid #f90;
@@ -177,14 +188,14 @@ ul.list-inline li{
     border: 2px solid #EE6723;
     box-shadow: 0px 0px 3px #fff inset;
 }
-.user-photo[post-type="1"]::before{
-    background-color: #EE6723;
+.user-photo[post-type="1"]::before,.user-post[post-type="1"]::before{
+    background-color: #EE6723 !important;
 }
-.user-photo[post-type="2"]::before{
-    background-color: #2ab9fd;
+.user-photo[post-type="2"]::before,.user-post[post-type="2"]::before{
+    background-color: #2ab9fd !important;
 }
-.user-photo[post-type="3"]::before{
-    background-color: #bda68e;
+.user-photo[post-type="3"]::before,.user-post[post-type="3"]::before{
+    background-color: #bda68e !important;
 }
 .user-photo.user-photo-sm{
     width: 28px !important;
@@ -241,6 +252,41 @@ ul.list-inline li{
     float: right;
     margin-left: 5px;
     margin-right: 0;
+}
+/*  */
+.person-item{
+    position: relative;
+    display: block;
+    padding-left: 58px;
+    padding-right: 58px;
+    line-height: 24px;
+    padding-top:15px;
+    padding-bottom:15px; 
+    line-height: 1.875em;
+}
+.person-item .user-photo{
+    position: absolute;
+    top: 50%;
+    margin-top: -18px;
+    left: 5px;
+    border-width: 1px;
+}
+.person-item .user-post{
+    position: absolute;
+    top: 50%;
+    margin-top: -1em;
+    left: 100%;
+    margin-left: -54px;
+    transform: scale(.85);
+}
+.person-item .user-post::before{
+    content: attr(post);
+    background-color: gray;
+    padding: .135em .475em;
+    font-size: 13px;
+    border-radius: 4px 4px;
+    line-height: 1.475em;
+    color: #fff;
 }
 /*  */
 ul.list-users{}
