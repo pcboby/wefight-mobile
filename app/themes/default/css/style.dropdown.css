@@ -1,0 +1,11 @@
+.dropdown{
+	position: absolute;
+	z-index: 9;
+	color: initial;
+	font-size: 13px;
+	display: none;
+}
+.dropdown .list{
+	background-color: #fff;
+	box-shadow: 0 0 5px rgba(0, 0, 0, .5);
+}

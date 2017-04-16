@@ -91,6 +91,24 @@ h1,h2,h3,h4,h5,h6,label{
     height: 34px;
     line-height: 34px;
 }
+.header .dropdown{
+	position: fixed !important;
+	z-index: 1;
+	top: 44px;
+	left: 0;
+	right: 0;
+}
+.header .dropdown[mask="true"]::before{
+	content: '';
+	position: fixed;
+	z-index: 0;
+	top: 44px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,.5);
+}
+
 .wraper{}
 /*  */
 .row{}
@@ -102,6 +120,9 @@ h1,h2,h3,h4,h5,h6,label{
 /*  */
 .clearfix{
 	clear: both;
+}
+.border{
+	border-bottom: 1px solid #eee;
 }
 .space{
 	height: 15px;

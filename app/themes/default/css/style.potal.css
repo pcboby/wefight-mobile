@@ -15,6 +15,10 @@
 	color: #fff;
 	font-size: 17px;
 }
+.potal .potal-header.mini{
+	font-size: 14px;
+	line-height: 36px;
+}
 .potal .potal-body{
 	background-color: #fff;
 	padding: 5px;

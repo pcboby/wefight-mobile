@@ -1,4 +1,7 @@
-ul {}
+ul {
+    position: relative;
+    z-index: 1;
+}
 
 ul li {}
 
@@ -43,7 +46,12 @@ ul.list {
 ul.list li {
     display: block;
 }
-
+ul.list li.active{
+    color: #f90;
+}
+ul.list.border{
+    border-bottom: none;
+}
 ul.list.border li {
     border-bottom: 1px solid #eee;
 }
@@ -134,12 +142,12 @@ ul.list-inline li{
 .user-item {
     display: block;
     line-height: 36px;
-    padding: 8px 4px;
-    border-bottom: 1px solid #eee;
+    padding: 4px;
+    /* border-bottom: 1px solid #eee; */
 }
 /*  */
 .user-photo {
-    display: block;
+    /* display: block; */
     position: relative;
     background-size: cover;
     width: 36px;
@@ -301,6 +309,22 @@ ul.list-img li {
     font-family: 'Glyphicons Halflings';
     content: '\e013';
     color: #ff7138;
+}
+
+.msg-item{
+    display: block;
+    background-color: #fff;
+}
+.msg-item-head{
+    background-color: #F6F8FC;
+    line-height: 2.835em;
+    color: #999BA4;
+    padding: 0 10px;
+    font-size: 13px;
+}
+.msg-item-cont{
+    padding: 10px;
+    line-height: 1.615em;
 }
 
 ul.list-img[data-col="4"] {
